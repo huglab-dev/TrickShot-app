@@ -1,68 +1,92 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/images/huglab-logo-readme-dark.png">
-  <img src="docs/images/huglab-logo-readme-light.png" alt="huglab" width="268">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/huglab-logo-dark.png">
+  <img src="docs/images/huglab-logo-light.png" alt="huglab" width="240">
 </picture>
 
 # TrickShot
 
-A screenshot tool for macOS. You can capture, annotate, blur what is sensitive and save it with a tag, all on your own Mac.
+**Screenshots for IT and developer work: capture, explain, and share them without leaking secrets.**
 
-[**Download**](https://github.com/huglab-dev/TrickShot-app/releases/latest) · macOS 14 or later · Apple Silicon and Intel
+[**⬇ Download the latest version**](https://github.com/huglab-dev/TrickShot-app/releases/latest)
+
+macOS 14 or later · Apple Silicon and Intel · Free
 
 <br>
 
-<img src="docs/images/smart-redact.png" alt="The TrickShot editor with Smart redact on: the IP address, the password, the access key, the token and the bearer token in a terminal screenshot are blurred" width="830">
+<img src="docs/images/hero-editor.png" alt="The TrickShot editor with a web console screenshot annotated with numbered steps, a highlighted value, a label and a curved arrow" width="880">
 
 </div>
 
-TrickShot lives in the menu bar. Every capture opens in its own editor window, so several screenshots can be open at once. It was made for developer and IT work: screenshots of terminals, consoles and admin pages that have to be shared without passwords, keys or customer data in them.
+<br>
+
+## Why TrickShot
+
+- **Made for technical screenshots.** Terminals, admin consoles and settings pages, explained with steps, arrows and labels in a few clicks.
+- **Secrets get blurred for you.** Smart redact reads the screenshot and hides passwords, keys, tokens and personal data before you share it.
+- **Everything stays on your Mac.** No account, no analytics, no uploads. Text recognition runs on-device.
 
 ## Capture
 
-| Action | Default shortcut |
-|---|---|
-| Capture Area | ⌥⇧1 |
-| Capture Window | ⌥⇧2 |
-| Capture Full Screen | ⌥⇧3 |
-| Copy Text (OCR) | ⌥⇧4 |
-| Capture Scrolling Area | ⌥⇧5 |
+TrickShot lives in the menu bar. Each capture opens in its own editor window, so several screenshots can be open at once.
 
-All shortcuts can be changed in Settings.
+| Shortcut | Action |
+|:---:|---|
+| <kbd>⌥</kbd> <kbd>⇧</kbd> <kbd>1</kbd> | **Capture Area.** The screen freezes while you select, so menus and tooltips stay in the picture. |
+| <kbd>⌥</kbd> <kbd>⇧</kbd> <kbd>2</kbd> | **Capture Window.** One window with clean edges, even when others cover it. |
+| <kbd>⌥</kbd> <kbd>⇧</kbd> <kbd>3</kbd> | **Capture Full Screen.** The display under the pointer. |
+| <kbd>⌥</kbd> <kbd>⇧</kbd> <kbd>4</kbd> | **Copy Text.** Reads the text in an area and puts it on the clipboard. |
+| <kbd>⌥</kbd> <kbd>⇧</kbd> <kbd>5</kbd> | **Capture Scrolling Area.** Keeps capturing while you scroll and stitches it into one tall picture. |
 
-- **Area** freezes the screen while you select an area, so menus and tooltips stay in the picture. A loupe shows pixel coordinates and the color under the pointer. The arrow keys move the pointer one pixel at a time, and `C` copies the color as hex.
-- **Window** captures one window with clean edges, even when other windows cover it. Press Space during an area capture to switch to window mode.
-- **Scrolling Area** keeps capturing while you scroll and stitches the frames into one tall picture. Sticky headers and footers are kept only once.
-- **Copy Text** reads the text in an area and puts it on the clipboard without opening an editor.
+All shortcuts can be changed in Settings. While you select an area, a loupe shows the pixel position and color, the arrow keys move one pixel at a time, <kbd>C</kbd> copies the color as hex, and <kbd>Space</kbd> switches to window mode.
 
-You can also open your own pictures in the editor, from Finder, from the menu or from the clipboard.
+You can also open your own pictures: from Finder, with **Open Image…** in the menu, or with **New from Clipboard**.
 
-## Edit
+## Annotate
 
-The tools are Arrow, Line, Box, Ellipse, Pen, Highlighter, Text, Step number, Blur (soft or pixelated), Spotlight, Magnifier, Crop, Cut out strip and Extract text. Every tool has a one-key shortcut. Shapes stay movable and editable, and every change can be undone.
+<p align="center">
+  <img src="docs/images/toolbar.png" alt="The TrickShot editor toolbar: copy, save, pin, rounded corners, the drawing tools, Smart redact, color, and the color, size and zoom readout" width="880">
+</p>
 
-**Cut out strip** removes a horizontal or vertical band and joins the rest, which is useful for hiding the middle of a long log. **Pin to screen** keeps a screenshot floating above other windows while you work.
+Every tool has a one-key shortcut. Shapes stay movable and editable, and every change can be undone.
+
+| Key | Tool | | Key | Tool |
+|:---:|---|---|:---:|---|
+| <kbd>V</kbd> | Select | | <kbd>T</kbd> | Text, in a box or plain |
+| <kbd>A</kbd> | Arrow, straight or curved | | <kbd>N</kbd> | Step number |
+| <kbd>L</kbd> | Line | | <kbd>B</kbd> | Blur, soft or pixelated |
+| <kbd>R</kbd> | Box, outline or filled | | <kbd>S</kbd> | Spotlight |
+| <kbd>O</kbd> | Ellipse | | <kbd>M</kbd> | Magnifier |
+| <kbd>P</kbd> | Pen | | <kbd>C</kbd> | Crop |
+| <kbd>H</kbd> | Highlighter | | <kbd>K</kbd> | Cut out strip |
+| | | | <kbd>E</kbd> | Extract text |
+
+Tools you rarely use can be hidden under the wrench and brought back with **Customize Toolbar**. **Cut out strip** removes a band from the middle of a long log and joins the rest. **Pin to screen** keeps a screenshot floating above your other windows while you work.
 
 ## Smart redact
 
 <p align="center">
-  <img src="docs/images/redact-settings.png" alt="TrickShot Settings, Redact tab: the IT-Default profile with passwords and API keys switched on" width="520">
+  <img src="docs/images/smart-redact.png" alt="A terminal screenshot before and after Smart redact: the IP address, the database connection string, the access key, the token and the bearer token are blurred" width="880">
 </p>
 
-The eye button reads the text in the screenshot and blurs everything that matches the active profile. You can check the result and remove or add blur boxes yourself.
+Click the eye in the toolbar. TrickShot reads the text in the screenshot and blurs everything the active profile is set to find. Check the result, then remove a box or add your own.
 
-- **Secrets:** passwords and private keys (including the password in connection strings like `postgres://user:password@host`), API keys and tokens (AWS, GitHub, Slack, OpenAI, JWTs and long hex or base64 strings), IP and MAC addresses, links and domain names.
+- **Secrets:** passwords and private keys, including the password in connection strings such as `postgres://user:password@host`; API keys and tokens (AWS, GitHub, Slack, OpenAI, JWTs, long hex and base64 strings); IP and MAC addresses; links and domain names.
 - **Personal and company data:** e-mail addresses, phone numbers, street addresses, Swedish personnummer and organisationsnummer, card numbers, IBAN, bankgiro and plusgiro.
 - **Your own lists:** words and regular expressions, such as customer names or ticket numbers.
 
-Profiles hold different combinations, for example one for internal IT and one for sharing outside the company. Blur is burned into the exported file, so it cannot be undone or read back by the person who gets it.
+<p align="center">
+  <img src="docs/images/redact-settings.png" alt="TrickShot Settings, Redact tab: the IT-Default profile with passwords and API keys switched on" width="560">
+</p>
+
+Profiles keep different combinations, for example one for internal IT work and one for sharing outside the company. Right-click the eye to switch. Blur is burned into the exported file, so the person who gets it cannot undo it.
 
 ## Save and share
 
-- `⌘C` copies the finished picture, and `⌘S` saves it as a PNG.
-- When you save, you can pick a tag that becomes the start of the file name, for example `acme_2026-11-09_22-01-33.png`. A script that sorts files can then route each screenshot to the right folder.
-- Recent screenshots stay editable from the menu, with their annotations, for as long as your retention setting keeps them.
+- <kbd>⌘</kbd> <kbd>C</kbd> copies the finished picture, and <kbd>⌘</kbd> <kbd>S</kbd> saves it as a PNG.
+- Pick a tag when you save and it becomes the start of the file name, for example `acme_2026-11-09_22-01-33.png`. A script that sorts files can then route each screenshot to the right folder.
+- Recent screenshots stay editable from the menu, annotations included, for as long as your retention setting keeps them.
 
 ## Install
 
@@ -71,20 +95,29 @@ Profiles hold different combinations, for example one for internal IT and one fo
 3. Open **System Settings → Privacy & Security**, scroll to **Security** and choose **Open Anyway** next to TrickShot.
 4. When TrickShot asks for **Screen & System Audio Recording**, allow it in System Settings. Then quit TrickShot and open it again.
 
-TrickShot tells you when there is a new version: an **Update Available** item appears at the top of its menu, and Settings → About shows it too. Both open the release page on GitHub. TrickShot never downloads or installs anything itself.
+Each release has a `.sha256` file next to the DMG. To check your download:
 
-New versions need the same approval. Each Release also has a `.sha256` file, so you can check the download with `shasum -a 256 TrickShot-x.y.z.dmg`.
+```bash
+shasum -a 256 -c TrickShot-x.y.z.dmg.sha256
+```
+
+## Updates
+
+When a new version is out, **Update Available** appears at the top of the TrickShot menu, and **Settings → About** shows it too. Both open the release page here. TrickShot never downloads or installs anything by itself, and each new version needs the **Open Anyway** approval again.
 
 ## Privacy
 
-TrickShot works on your Mac. It has no account and no analytics, and your screenshots are never uploaded. Text recognition uses Apple's on-device Vision framework. Screenshots are kept in `~/Library/Application Support/TrickShot` for the period you choose in Settings, and you can turn that off.
+TrickShot has no account and no analytics, and your screenshots are never uploaded. Text recognition uses Apple's on-device Vision framework. Recent screenshots are kept in `~/Library/Application Support/TrickShot` for the period you choose in Settings, and you can turn that off.
 
-The only network request is the update check. At most once a day, when TrickShot starts or its menu opens, it asks GitHub for the latest release of this page and reads only the version number and the link. Turn it off under **Settings → About → Check for new versions once a day**; the **Check Now** button there still works.
+The only network request is the update check. At most once a day, when TrickShot starts or its menu opens, it asks GitHub for the latest release on this page and reads only the version number and the link. Turn it off under **Settings → About**; the **Check Now** button there still works.
 
 TrickShot needs the **Screen Recording** permission to take screenshots. It does not record video or audio.
 
-## About
+---
 
-TrickShot is developed by Hugo Bjurström at [huglab](https://github.com/huglab-dev). It is free to download. The source code is not public.
+<div align="center">
 
+TrickShot is made by Hugo Bjurström at [huglab](https://github.com/huglab-dev). It is free to download; the source code is not public.<br>
 TrickShot is an independent project and is not affiliated with or endorsed by Apple.
+
+</div>
