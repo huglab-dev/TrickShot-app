@@ -52,7 +52,7 @@ The tools are Arrow, Line, Box, Ellipse, Pen, Highlighter, Text, Step number, Bl
 
 The eye button reads the text in the screenshot and blurs everything that matches the active profile. You can check the result and remove or add blur boxes yourself.
 
-- **Secrets:** passwords and private keys, API keys and tokens (AWS, GitHub, Slack, OpenAI, JWTs and long hex or base64 strings), IP and MAC addresses, links and domain names.
+- **Secrets:** passwords and private keys (including the password in connection strings like `postgres://user:password@host`), API keys and tokens (AWS, GitHub, Slack, OpenAI, JWTs and long hex or base64 strings), IP and MAC addresses, links and domain names.
 - **Personal and company data:** e-mail addresses, phone numbers, street addresses, Swedish personnummer and organisationsnummer, card numbers, IBAN, bankgiro and plusgiro.
 - **Your own lists:** words and regular expressions, such as customer names or ticket numbers.
 
@@ -71,11 +71,15 @@ Profiles hold different combinations, for example one for internal IT and one fo
 3. Open **System Settings → Privacy & Security**, scroll to **Security** and choose **Open Anyway** next to TrickShot.
 4. When TrickShot asks for **Screen & System Audio Recording**, allow it in System Settings. Then quit TrickShot and open it again.
 
+TrickShot tells you when there is a new version: an **Update Available** item appears at the top of its menu, and Settings → About shows it too. Both open the release page on GitHub. TrickShot never downloads or installs anything itself.
+
 New versions need the same approval. Each Release also has a `.sha256` file, so you can check the download with `shasum -a 256 TrickShot-x.y.z.dmg`.
 
 ## Privacy
 
-TrickShot works entirely on your Mac. It has no account, no analytics and no network connections. Text recognition uses Apple's on-device Vision framework. Screenshots are kept in `~/Library/Application Support/TrickShot` for the period you choose in Settings, and you can turn that off.
+TrickShot works on your Mac. It has no account and no analytics, and your screenshots are never uploaded. Text recognition uses Apple's on-device Vision framework. Screenshots are kept in `~/Library/Application Support/TrickShot` for the period you choose in Settings, and you can turn that off.
+
+The only network request is the update check. At most once a day, when TrickShot starts or its menu opens, it asks GitHub for the latest release of this page and reads only the version number and the link. Turn it off under **Settings → About → Check for new versions once a day**; the **Check Now** button there still works.
 
 TrickShot needs the **Screen Recording** permission to take screenshots. It does not record video or audio.
 
