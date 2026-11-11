@@ -51,16 +51,16 @@ You can also open your own pictures: from Finder, with **Open Image…** in the 
 
 Every tool has a one-key shortcut. Shapes stay movable and editable, and every change can be undone.
 
-| Key | Tool | | Key | Tool |
-|:---:|---|---|:---:|---|
-| <kbd>V</kbd> | Select | | <kbd>T</kbd> | Text, in a box or plain |
-| <kbd>A</kbd> | Arrow, straight or curved | | <kbd>N</kbd> | Step number |
-| <kbd>L</kbd> | Line | | <kbd>B</kbd> | Blur, soft or pixelated |
-| <kbd>R</kbd> | Box, outline or filled | | <kbd>S</kbd> | Spotlight |
-| <kbd>O</kbd> | Ellipse | | <kbd>M</kbd> | Magnifier |
-| <kbd>P</kbd> | Pen | | <kbd>C</kbd> | Crop |
-| <kbd>H</kbd> | Highlighter | | <kbd>K</kbd> | Cut out strip |
-| | | | <kbd>E</kbd> | Extract text |
+| Key | Tool | Key | Tool |
+|:---:|---|:---:|---|
+| <kbd>V</kbd> | Select | <kbd>T</kbd> | Text, in a box or plain |
+| <kbd>A</kbd> | Arrow, straight or curved | <kbd>N</kbd> | Step number |
+| <kbd>L</kbd> | Line | <kbd>B</kbd> | Blur, soft or pixelated |
+| <kbd>R</kbd> | Box, outline or filled | <kbd>S</kbd> | Spotlight |
+| <kbd>O</kbd> | Ellipse | <kbd>M</kbd> | Magnifier |
+| <kbd>P</kbd> | Pen | <kbd>C</kbd> | Crop |
+| <kbd>H</kbd> | Highlighter | <kbd>K</kbd> | Cut out strip |
+| | | <kbd>E</kbd> | Extract text |
 
 Tools you rarely use can be hidden under the wrench and brought back with **Customize Toolbar**. **Cut out strip** removes a band from the middle of a long log and joins the rest. **Pin to screen** keeps a screenshot floating above your other windows while you work.
 
