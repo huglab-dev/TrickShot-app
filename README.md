@@ -64,6 +64,12 @@ Every tool has a one-key shortcut. Shapes stay movable and editable, and every c
 
 Tools you rarely use can be hidden under the wrench and brought back with **Customize Toolbar**. **Cut out strip** removes a band from the middle of a long log and joins the rest. **Pin to screen** keeps a screenshot floating above your other windows while you work.
 
+### Padding and backgrounds
+
+The **Padding** button puts space around the screenshot, from 0 to 200 pt. The space can be transparent, any color, or one of six gradients: Rose, Dusk, Aurora, Deep sea, Mist and Lagoon. Picking a color or gradient adds 16 pt straight away.
+
+Arrows, text and shapes can reach past the edge of the screenshot, or start in the gray area around it. When you let go, the picture grows to make room for them. With rounded corners on, the screenshot and the outer edge of the padding are both rounded. The editor window grows with the picture, so the whole thing stays in view without scrolling.
+
 ## Smart redact
 
 <p align="center">
