@@ -39,14 +39,14 @@ TrickShot lives in the menu bar. Each capture opens in its own editor window, so
 | <kbd>⌥</kbd> <kbd>⇧</kbd> <kbd>4</kbd> | **Copy Text.** Reads the text in an area and puts it on the clipboard. |
 | <kbd>⌥</kbd> <kbd>⇧</kbd> <kbd>5</kbd> | **Capture Scrolling Area.** Keeps capturing while you scroll and stitches it into one tall picture. |
 
-All shortcuts can be changed in Settings. While you select an area, a loupe shows the pixel position and color, the arrow keys move one pixel at a time, <kbd>C</kbd> copies the color as hex, and <kbd>Space</kbd> switches to window mode.
+All shortcuts can be changed in Settings. While you select an area, the arrow keys move one pixel at a time and <kbd>Space</kbd> switches to window mode. Turn on the loupe in Settings to see the pixel position and color as well; <kbd>C</kbd> then copies the color as hex.
 
 You can also open your own pictures: from Finder, with **Open Image…** in the menu, or with **New from Clipboard**.
 
 ## Annotate
 
 <p align="center">
-  <img src="docs/images/toolbar.png" alt="The TrickShot editor toolbar: copy, save, pin, rounded corners, the drawing tools, Smart redact, color, and the color, size and zoom readout" width="880">
+  <img src="docs/images/toolbar.png" alt="The TrickShot editor toolbar: copy, save, pin, rounded corners, padding, the drawing tools, Smart redact, color, undo and redo, and the color, size and zoom readout" width="880">
 </p>
 
 Every tool has a one-key shortcut. Shapes stay movable and editable, and every change can be undone.
@@ -62,11 +62,21 @@ Every tool has a one-key shortcut. Shapes stay movable and editable, and every c
 | <kbd>H</kbd> | Highlighter | <kbd>K</kbd> | Cut out strip |
 | | | <kbd>E</kbd> | Extract text |
 
-Tools you rarely use can be hidden under the wrench and brought back with **Customize Toolbar**. **Cut out strip** removes a band from the middle of a long log and joins the rest. **Pin to screen** keeps a screenshot floating above your other windows while you work.
+Tools you rarely use can be hidden under the wrench and brought back with **Customize Toolbar**, where you can also hide the undo and redo buttons. **Cut out strip** removes a band from the middle of a long log and joins the rest; the dashed seam shows only in the editor, never in the copied or saved picture. **Pin to screen** keeps a screenshot floating above your other windows while you work.
+
+### Speech bubbles and step numbers
+
+Text in a box gets a small round handle on its top edge. Drag it in any direction to turn the box into a speech bubble that points at what you mean; drag the tip back into the box to remove it. Step numbers have the same handle: drag it to turn the badge into a drop that points one way, without making it longer.
+
+Each new step number continues from the highest one. Right-click the step tool to **Restart Numbering at 1** or **Start Numbering at…** another number, and use **−** and **+** to change the number of a selected step.
+
+### Copy, paste and duplicate shapes
+
+With a shape selected, <kbd>⌘</kbd> <kbd>C</kbd>, <kbd>⌘</kbd> <kbd>X</kbd> and <kbd>⌘</kbd> <kbd>V</kbd> copy, cut and paste that shape, also between editor windows, and <kbd>⌘</kbd> <kbd>D</kbd> duplicates it. A copied step number gets the next number.
 
 ### Padding and backgrounds
 
-The **Padding** button puts space around the screenshot, from 0 to 200 pt. The space can be transparent, any color, or one of six gradients: Rose, Dusk, Aurora, Deep sea, Mist and Lagoon. Picking a color or gradient adds 16 pt straight away.
+The **Padding** button puts space around the screenshot, from 0 to 200 pt. The space can be transparent, any color, or one of six gradients: Rose, Dusk, Aurora, Deep sea, Mist and Lagoon. Picking a color or gradient adds 10 pt straight away.
 
 Arrows, text and shapes can reach past the edge of the screenshot, or start in the gray area around it. When you let go, the picture grows to make room for them. With rounded corners on, the screenshot and the outer edge of the padding are both rounded. The editor window grows with the picture, so the whole thing stays in view without scrolling.
 
@@ -90,7 +100,7 @@ Profiles keep different combinations, for example one for internal IT work and o
 
 ## Save and share
 
-- <kbd>⌘</kbd> <kbd>C</kbd> copies the finished picture, and <kbd>⌘</kbd> <kbd>S</kbd> saves it as a PNG.
+- <kbd>⌘</kbd> <kbd>C</kbd> with nothing selected, or the copy button, copies the finished picture, and <kbd>⌘</kbd> <kbd>S</kbd> saves it as a PNG.
 - Pick a tag when you save and it becomes the start of the file name, for example `acme_2026-11-09_22-01-33.png`. A script that sorts files can then route each screenshot to the right folder.
 - Recent screenshots stay editable from the menu, annotations included, for as long as your retention setting keeps them.
 
