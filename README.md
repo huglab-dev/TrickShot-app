@@ -15,7 +15,7 @@ macOS 14 or later · Apple Silicon and Intel · Free
 
 <br>
 
-<img src="docs/images/hero-editor.png" alt="The TrickShot editor with a web console screenshot on a blue gradient padding, annotated with step numbers pointing at the fields, a highlighted value, a label and a speech bubble pointing at the Deploy button" width="880">
+<img src="docs/images/hero-editor.png" alt="The TrickShot editor with a web console screenshot on a blue gradient padding, annotated with step numbers pointing at the fields, a highlighted value, a label and a curved arrow to the Deploy button" width="880">
 
 </div>
 
