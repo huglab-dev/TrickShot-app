@@ -129,6 +129,12 @@ The only network request is the update check. At most once a day, when TrickShot
 
 TrickShot needs the **Screen Recording** permission to take screenshots. It does not record video or audio.
 
+## Support
+
+TrickShot is free and has no ads or paid tier. If it saves you time, you can buy me a coffee.
+
+<a href="https://www.buymeacoffee.com/hugobjurstrom"><img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=%E2%98%95&slug=hugobjurstrom&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a coffee" height="40"></a>
+
 ---
 
 <div align="center">
